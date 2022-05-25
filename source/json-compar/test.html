@@ -1,0 +1,146 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>JSONEditor | JSON schema validation</title>
+
+  <link href="../dist/jsoneditor.css" rel="stylesheet" type="text/css">
+  <script src="../dist/jsoneditor.js"></script>
+
+  <style type="text/css">
+    body {
+      width: 600px;
+      font: 11pt sans-serif;
+    }
+    #jsoneditor {
+      width: 100%;
+      height: 500px;
+    }
+
+    /* custom bold styling for non-default JSON schema values */
+    .jsoneditor-is-not-default {
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+<h1>JSON schema validation</h1>
+<p>
+  This example demonstrates JSON schema validation. The JSON object in this example must contain properties like <code>firstName</code> and <code>lastName</code>, can can optionally have a property <code>age</code> which must be a positive integer.
+</p>
+<p>
+  See <a href="http://json-schema.org/" target="_blank">http://json-schema.org/</a> for more information.
+</p>
+
+<div id="jsoneditor"></div>
+
+<script>
+  const schema = {
+
+        "title": "Schema",
+        "type": "object",
+
+        "properties": {
+            "_scenename": {
+                "title": "scenename",
+                "req": "mandatory",
+                "type": "string",
+                "%comment%": "Name of the Scene"
+            },
+
+            "_sid": {
+                "title": "sid",
+                "req": "mandatory",
+                "type": "string",
+                "%comment%": "A fillable Unique Identifier of a Scene to distinguish the scene"
+            },
+
+            "_slabel": {
+                "title": "slabel",
+                "req": "optional",
+                "type": "string",
+                "%comment%": "A fillable Optional text field for scene description in 50 words"
+            },
+
+            "_playarea": {
+                "title": "playarea",
+                "req": "mandatory",
+                "type": "object",
+                "%comment%": "defines the boundaries of the virtual play area where articles and scene users interact with length, breadth, height ending up in a cube or cuboid. The size of playarea should be less than scenearea.",
+
+                "properties": {
+                    "#pid": {
+                        "title": "#pid",
+                        "description": "The family name.",
+                        "examples": [
+                            "Smith"
+                        ],
+                        "type": "string"
+                    },
+                    "#length": {
+                        "title": "#length",
+                        "description": "The family name.",
+                        "examples": [
+                            "Smith"
+                        ],
+                        "type": "integer"
+                    },
+                    "#breadth": {
+                        "title": "#breadth",
+                        "description": "The family name.",
+                        "examples": [
+                            "Smith"
+                        ],
+                        "type": "integer"
+                    },
+                    "#height": {
+                        "title": "#height",
+                        "description": "The family name.",
+                        "examples": [
+                            "Smith"
+                        ],
+                        "type": "integer"
+                    }
+                }
+            },
+
+        },
+
+        "required": ["_scenename", "_sid", "_playarea"]
+    }
+
+  
+
+  const json = {
+   "_scenename":"bowling alley",
+   "_sid":"AX24C67H",
+   "_slabel":"This is a text game",
+   "_playarea":{
+      "#pid":"TH234OP",
+      "#length": 20,
+      "#breadth": 5,
+      "#height": 10
+   }
+}
+
+  const options = {
+    schema: schema,
+    mode: 'tree',
+    modes: ['code', 'text', 'tree', 'preview']
+  }
+
+  const arr = JSON.parse(JSON.stringify(json));
+  // console.log(JSON.stringify(schema));
+  const keyset = Object.keys(arr._playarea);
+  console.log(keyset[2]);
+
+  // create the editor
+  const container = document.getElementById('jsoneditor')
+  const editor = new JSONEditor(container, options, json)
+  
+  
+
+</script>
+</body>
+</html>
