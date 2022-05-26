@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>JSONEditor | JSON schema validation</title>
+
+  <link href="../dist/jsoneditor.css" rel="stylesheet" type="text/css">
+  <script src="../dist/jsoneditor.js"></script>
+
+  <script src="https://bgrins.github.io/filereader.js/filereader.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2014-11-29/FileSaver.min.js"></script>
+
+  <style type="text/css">
+    html, body {
+      font: 11pt sans-serif;
+    }
+
+    /* custom bold styling for non-default JSON schema values */
+    .jsoneditor-is-not-default {
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+<h1>JSON schema validation</h1>
+
+<p>
+  Load the Schema File: <input type="file" id="loadDocument-schema" value="Load" />
+</p>
+
+<p>
+    Load the JSON DATA: <input type="file" id="loadDocument" value="Load" />
+    <button id="validate-JSON">Validate JSON</button>
+</p>
+
+<p>
+    Save a JSON document: <input type="button" id="saveDocument" value="Save" />
+</p>
+
+<div class="content-main">
+    <div id="jsoneditor"></div>
+    <div id="jsoneditor-view"></div>
+    <div id="jsoneditor-validated"></div>
+</div>
+
+<p>
+    See <a href="http://json-schema.org/" target="_blank">http://json-schema.org/</a> for more information.
+</p>
+
+<div id="dustBin"></div>
+
+<!-- <script src="../dist/test2.js"></script> -->
+<script src="../dist/asset.js"></script>
+</body>
+</html>
