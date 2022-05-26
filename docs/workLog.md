@@ -8,7 +8,8 @@ SNEHASHISH ROUT
 ### Tuesday
     -Deep Study on JSON schema Validation and gained more inDepth Knowledge about JSON and JSON parsing. 
     -Formed a Sample JSON schema and a sample data and performed the validation by executing the code I wrote.        
-### ...
+### Wednesday
+    -Worked on adding custom Validator to the setUp. Learnt more about JSON comparator by analyzing JSON forms.
 ### ...
 ### ...
 
