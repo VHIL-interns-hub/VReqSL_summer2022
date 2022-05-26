@@ -10,7 +10,8 @@ SNEHASHISH ROUT
     -Formed a Sample JSON schema and a sample data and performed the validation by executing the code I wrote.        
 ### Wednesday
     -Worked on adding custom Validator to the setUp. Learnt more about JSON comparator by analyzing JSON forms.
-### ...
+### Thursday
+    -Compleleted work on custom Validator that takes in a grammar file and a data file and compares and validats our JSON 
 ### ...
 
 ----
