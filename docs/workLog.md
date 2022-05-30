@@ -12,7 +12,8 @@ SNEHASHISH ROUT
     -Worked on adding custom Validator to the setUp. Learnt more about JSON comparator by analyzing JSON forms.
 ### Thursday
     -Compleleted work on custom Validator that takes in a grammar file and a data file and compares and validats our JSON 
-### ...
+### Friday
+    - Set Up the VRSeql pre-made repo and analysed the code to begin Integration.
 
 ----
 ## Week 2 [30 May 2022 - 4 June 2022]
