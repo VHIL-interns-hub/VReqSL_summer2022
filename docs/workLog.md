@@ -18,7 +18,9 @@ SNEHASHISH ROUT
 ----
 ## Week 2 [30 May 2022 - 4 June 2022]
 ### Monday
+    -Carried out partial Integration with the exisiting Project. Tried to convert the html files to ejs files.
 ### Tuesday
+    - Started Working on the Frontend and Compelelted making SignUP and SignIn Pages. Started working on other pages as well.
 ### ...
 ### ...
 ### ...
