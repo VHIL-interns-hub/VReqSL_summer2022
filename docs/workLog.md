@@ -21,9 +21,12 @@ SNEHASHISH ROUT
     -Carried out partial Integration with the exisiting Project. Tried to convert the html files to ejs files.
 ### Tuesday
     - Started Working on the Frontend and Compelelted making SignUP and SignIn Pages. Started working on other pages as well.
-### ...
-### ...
-### ...
+### Wednesday
+    - Other Pages Created as Well. Frontend Link Up in React
+### Thursday
+    - Tried to merge jsoneditor library. CaughtUp with errors. Tried to resolve it
+### Friday
+    - Started to work on Session Management. Started to learn to connect to Database.
 
 ----
 ## Week 3 [ .. .. ..]
