@@ -31,6 +31,7 @@ SNEHASHISH ROUT
 ----
 ## Week 3 [ .. .. ..]
 ### Monday
+    - Tried to set Up session Mangement. Partially successful. 
 ### Tuesday
 ### ...
 ### ...
