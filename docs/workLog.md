@@ -29,14 +29,17 @@ SNEHASHISH ROUT
     - Started to work on Session Management. Started to learn to connect to Database.
 
 ----
-## Week 3 [ .. .. ..]
+## Week 3 [4 June 2022 - 10 June 2022]
 ### Monday
     - Tried to set Up session Mangement. Partially successful. 
 ### Tuesday
-### ...
-### ...
-### ...
-
+    - Split Up work with Nisha and joined and decided to setUp Node server insetead of Django.
+### - Wednesday
+    - Made up the ground to set connections with MongoDB
+### -Thursday
+    - Learnt React Router concept to execute the Navigation from pages to Pages in React
+### -Friday
+    - MongoDB created. The login Page and SignUP page could take in Login Info and and show in console. Ran into some problem where the App crashed which later got           resolved.
 ----
 ...
 ...
