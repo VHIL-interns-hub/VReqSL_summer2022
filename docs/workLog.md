@@ -41,6 +41,14 @@ SNEHASHISH ROUT
 ### -Friday
     - MongoDB created. The login Page and SignUP page could take in Login Info and and show in console. Ran into some problem where the App crashed which later got           resolved.
 ----
-...
-...
-...
+## Week 4 [13 June 2022 - 17 June 2022]
+### Monday
+    - Login Page finalized and Up and working fine. 
+### Tuesday
+    - Presented the work and were shown with the whole figma presentation. Split Up the work with Nisha. 
+### - Wednesday
+    - Compeleted to integrate the JSON editor and validator there in the screen.  
+### -Thursday
+    - With home screen ready started working on other screens.
+### -Friday
+    - Trackbar got resolved and would get updated once the other pages are ready
